@@ -130,3 +130,22 @@ obj = child(11)
 print(obj.v1 + " " + obj.v2)
 #  AttributeError: child instance has no attribute 'v1'.  self.v1 was never
 # created as a variable since the parent __init__ was not explicitly called.
+
+
+#17: What following python function will return?
+def my_cool_func(a, b, c):
+    if a > (b + c):
+        return a
+    elif b == c:
+        return b
+    else:
+        return c
+
+my_cool_func(5, 3, 2)
+my_cool_func(7, 4, 4)
+my_cool_func(3, 5, 9)
+# 2 c
+# 4 b
+# 9 c
+
+
