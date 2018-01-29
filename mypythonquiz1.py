@@ -108,3 +108,25 @@ print("\x48\x49!")
 # HI!
 # \x is an escape sequence that means the following 2 digits ares
 # a hexadicmal number encoding a character.
+
+#17: What gets printed?
+print(0xA + 0xa)
+# 20
+# 0xA and 0xa are both hexadecimal integer literals representing the decimal
+# value 10.  Their sum is 20.
+
+
+#18: What gets printed?
+class parent:
+    def __init__(self, param):
+        self.v1 = param
+
+
+class child(parent):
+    def __init__(self, param):
+        self.v2 = param
+
+obj = child(11)
+print(obj.v1 + " " + obj.v2)
+#  AttributeError: child instance has no attribute 'v1'.  self.v1 was never
+# created as a variable since the parent __init__ was not explicitly called.

@@ -6,3 +6,5 @@
  	An Introduction to Computer Science Using Python
  	by J.Campbell, P.Gries, J.Montojo, G.Wilson 
 
+### Quizzes from:
+http://www.mypythonquiz.com/
