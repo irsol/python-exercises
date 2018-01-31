@@ -117,22 +117,22 @@ print(0xA + 0xa)
 
 
 #18: What gets printed?
-class parent:
+class Parent:
     def __init__(self, param):
         self.v1 = param
 
 
-class child(parent):
+class Child(Parent):
     def __init__(self, param):
         self.v2 = param
 
-obj = child(11)
+obj = Child(11)
 print(obj.v1 + " " + obj.v2)
 #  AttributeError: child instance has no attribute 'v1'.  self.v1 was never
 # created as a variable since the parent __init__ was not explicitly called.
 
 
-#17: What following python function will return?
+#19: What following python function will return?
 def my_cool_func(a, b, c):
     if a > (b + c):
         return a
@@ -148,4 +148,7 @@ my_cool_func(3, 5, 9)
 # 4 b
 # 9 c
 
+#20
+lst = [("a", 1), ("b", 2), ("c", 3)]
+print()
 
