@@ -148,7 +148,14 @@ my_cool_func(3, 5, 9)
 # 4 b
 # 9 c
 
-#20
-lst = [("a", 1), ("b", 2), ("c", 3)]
-print()
 
+#20
+for i in range(2):
+    print(i)
+
+for i in range(4, 6):
+    print(i)
+# 0 , 1, 4, 5
+#  If only 1 number is supplied to range it is the end of the range. (0 , 1)
+# The default beginning of a range is 0. The range will include the beginning
+# of the range and all numbers up to but not including the end of the range.(4,5)
