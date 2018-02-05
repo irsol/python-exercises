@@ -21,7 +21,7 @@ heart_risk(18, 23)
 
 
 #
-def risk(age, bmi):
+def calculate_heart_risk(age, bmi):
 
     table = [['medium', 'high'],
              ['low', 'medium']]
@@ -29,4 +29,4 @@ def risk(age, bmi):
     heavy = bmi >= 22.0
     risk = table[young][heavy]
     return risk
-risk(23, 32)
+calculate_heart_risk(23, 32)
