@@ -158,4 +158,13 @@ for i in range(4, 6):
 # 0 , 1, 4, 5
 #  If only 1 number is supplied to range it is the end of the range. (0 , 1)
 # The default beginning of a range is 0. The range will include the beginning
-# of the range and all numbers up to but not including the end of the range.(4,5)
+# of the range and all numbers up to but not including the end of range(4,5)
+
+#21
+lst = [3, 4, 7, 1, 1]
+result = 0
+for i in range(len(lst)):
+    result += lst[i]
+print(result)  # 16
+
+# 22 
