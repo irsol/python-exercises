@@ -167,4 +167,38 @@ for i in range(len(lst)):
     result += lst[i]
 print(result)  # 16
 
-# 22 
+#22 Tuples
+lst = [("a", 1), ("b", 2), ("c", 3)]
+for letter, number in lst:
+    print(letter, number)
+
+#23 Dictionary
+d = {"cat": "no",
+     "dog": "yes"}
+for word in d:
+    word = "fox"
+    if word in d:
+        print(True)
+    else:
+        print(False)
+
+#24
+a = 10
+b = 7
+if a < 7:
+    print("1")
+elif a == 7:
+    print("2")
+elif b < 10:
+    print("3")
+elif a > b:
+    print("4")
+else:
+    print("end")
+
+#25 String
+g = "I'm koschechka"
+new_g = g[:4] + "chiken"
+new_g
+
+
