@@ -27,13 +27,9 @@ print(not full or empty)
 
 
 def automate_camera(light, temperature):
-    if (light) < 0.01 or (temperature > 0.0):
-        if (light < 0.01) and (temperature > 0.0):
-            return True
-            #pass
-        else:
-            return False
-automate_camera(0.01, 2)
+    return (light < 0.01) != (temperature > 0.0)
+
+automate_camera(0.01, -2)
 
 
 # exclusive or
@@ -44,27 +40,52 @@ def automate_camera(light, temperature):
         return False
 automate_camera(0.00, -2)
 
-#
-level = float(input('Light level?'))
-temperature = float(input('Temperature?'))
-if level > 0.01 and temperature > 0:
-    print(Turns off)
-elif level > 0.01 and temperature < 0:
-    print(Turns off)
-else:
-    print(Turns on)
-
 #6.
 
-#7. The function returns True if a and v refer to different values and
+
+#7. The function returns True if a and b refer to different values and
 # returns False otherwise
 def different(a, b):
-    if a != b:
-        return True
-    else:
-        return False
+    return a != b
+
 different(2, 2)
 
 
-#8. 
+#8. You are given two float variables, population and land_area.
+# a. Write an if statement that will print the population if it is less than
+# 10,000,000
+
+
+population = 1.340000
+land_area = 1222.33
+
+if population < 10000000:
+    print("{: f}".format(population))
+
+
+# b. Write an if statement that will print the population if it is between
+# 10,000,000 and 35,000,000
+
+population = 36.000000
+land_area = 1222.33
+
+if 10.000000 < population < 35.000000:
+    print("{: f}".format(population))
+
+else:
+    print(None)
+
+
+# c. Write an if statement that will print "Densely populated" if the land
+# density(number of people per unit of area) is greater than 100.
+# d. Write an if statement that will print "Densely populated!" if the land
+# density print is greter than 100 and that will print "Sparsely populated"
+# otherwise.
+
+density = 90
+
+if density > 100:
+    print("Densely populated")
+else:
+    print("Sparsely populated")
 
