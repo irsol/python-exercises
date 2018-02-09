@@ -32,7 +32,7 @@ print(type(lambda: None))
 
 
 #6: what is the output of the below program?
-a=[1, 2, 3, None, (), [], ]
+a = [1, 2, 3, None, (), [], ]
 print(len(a))
 # 6
 # The trailing comma in the list is ignored, the rest are legitimate values
@@ -165,22 +165,18 @@ lst = [3, 4, 7, 1, 1]
 result = 0
 for i in range(len(lst)):
     result += lst[i]
-print(result)  # 16
+print(result)
+# 16
 
 #22 Tuples
 lst = [("a", 1), ("b", 2), ("c", 3)]
 for letter, number in lst:
-    print(letter, number)
+    print('{"letter"} {"number"}'.format(lst))
 
 #23 Dictionary
 d = {"cat": "no",
      "dog": "yes"}
-for word in d:
-    word = "fox"
-    if word in d:
-        print(True)
-    else:
-        print(False)
+print("fox" in d)
 
 #24
 a = 10
@@ -197,8 +193,7 @@ else:
     print("end")
 
 #25 String
-g = "I'm koschechka"
-new_g = g[:4] + "chiken"
-new_g
+g = "I'm cat"
+print(g.replace("cat", "fox"))
 
 
