@@ -89,3 +89,34 @@ if density > 100:
 else:
     print("Sparsely populated")
 
+
+#9. Function convert_tempretures converts temperature t from source units
+# to target units using. Function convert_to_celsius convert all source units
+# to celsius, than function convert_from_celsius converts celsius to target
+# units and returns result.
+def convert_to_celsius(t, source):
+    if source == "F":
+        return t - 32 * 5.0/9.0
+    elif source == "K":
+        return t - 273.15
+    elif source == 'C':
+        return t
+
+
+def convert_from_celsius(t, target):
+    if target == "F":
+        return t + 32 * 9.0/5.0
+    elif target == "K":
+        return t + 273.15
+    elif target == "C":
+        return t
+
+
+def convert_temperatures(t, source, target):
+    print('step 1', t, source, target)
+    celsius = convert_to_celsius(t, source)
+    print('step 2', celsius, t, source, target)
+    result = convert_from_celsius(celsius, target)
+    print('step 3', result, celsius, t, source, target)
+    return result
+
