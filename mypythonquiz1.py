@@ -171,7 +171,7 @@ print(result)
 #22 Tuples
 lst = [("a", 1), ("b", 2), ("c", 3)]
 for letter, number in lst:
-    print('{"letter"} {"number"}'.format(lst))
+    print('{"letter=number"}'.format(*lst))
 
 #23 Dictionary
 d = {"cat": "no",
