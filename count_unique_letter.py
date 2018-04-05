@@ -26,9 +26,12 @@ def unique(string):
 
     for letter in string:
         if letter in letters:
-            """ empty set, think about dd elements, first d is unique and in 
-                a set, but second isn't unique, so it's False """
+            """ empty set, think about dd elements, first d is unique and
+                in a set, but second isn't unique, so it's False """
             return False
-
-       
-print(unique('b dd a cccc'))        
+        """ this is how set letters filled in """
+        else:
+            letters.add(letter)
+    return True
+print(unique('b d a')) #True
+print(unique('b dd a cccc')) #False
