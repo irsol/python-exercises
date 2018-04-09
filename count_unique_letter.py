@@ -1,8 +1,8 @@
 
 # 1
-def unique(string):
+def count_unique_letter(string):
     """
-    ger rid of any spaces: (' ', '')
+    get rid off any spaces: (' ', '')
     """
     string = string.replace(' ', '')
 
@@ -12,7 +12,7 @@ def unique(string):
     """
 
     return len(set(string)) == len(string)
-print(unique('llll p mmkj'))
+print(count_unique_letter('llll p mmkj'))
 
 """ I returns Fals, because set ('llll p mmkj') it's 9 elemets and unique
     elements only 3 (pkj) in a strig 'llll p mmkj', does set of not unique
@@ -20,7 +20,7 @@ print(unique('llll p mmkj'))
 
 
 # 2
-def unique(string):
+def count_unique_letter(string):
     string = string.replace(' ', '')
     letters = set()
 
@@ -29,9 +29,9 @@ def unique(string):
             """ empty set, think about dd elements, first d is unique and
                 in a set, but second isn't unique, so it's False """
             return False
-        """ this is how set letters filled in """
+        """ this is how set() letters filled in """
         else:
             letters.add(letter)
-    return True
-print(unique('b d a')) #True
-print(unique('b dd a cccc')) #False
+                return True
+print(count_unique_letter('b d a')) #True
+print(count_unique_letter('b dd a cccc')) #False
