@@ -22,20 +22,18 @@ print(check_duplicates('l c n'))
 
 # 2
 
-# def count_unique_letters(string):
-#     string = string.replace(' ', '')
-#     letters = set()
-#
-#     for letter in string:
-#         if letter in letters:
-#             """ empty set, think about dd elements, first d is unique and
-#                 in a set, but second isn't unique, so it's False """
-#             return False
-#         """ this is how set() letters filled in """
-#         else:
-#             letters.add(letter)
-#             return True
-#
-# print(count_unique_letter('b d a')) #True
-# print(count_unique_letter('b dd a cccc')) #False
+def count_unique_letters(string):
+    string = string.replace(' ', '')
+    letters = {}
 
+    for letter in string:
+        if letter not in letters:
+            letters[letter] = 1
+        else:
+            letters[letter] += 1
+
+    return letters
+
+
+print(count_unique_letters('b d a'))
+print(count_unique_letters('b dd a cccc'))
