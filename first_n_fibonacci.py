@@ -9,7 +9,6 @@ n1 = 0
 n2 = 1
 
 print("\nFibonacci series: ")
-#6print(n1, ",", n2, end = " , ")
 
 # Check if the number of term is valid
 if num <= 0:
