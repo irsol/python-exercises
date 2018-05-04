@@ -9,9 +9,6 @@ def count_non_repetitive(s):
         else:
             letters_count == 1
 
-    for letter in s:
-        if letters_count == 1:
-            return letter
-    return None
+    return letters_count
 
-print(count_non_repetitive('Ky le fi'))
+print(count_non_repetitive('Ky lle fi'))
