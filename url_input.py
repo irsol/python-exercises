@@ -22,17 +22,20 @@ def fetch_save_url(url, file_name):
     else:
         print('Error, status code =', response.status_code)
 
+if __name__ == '__main__':
 
-# Test cases
 
-# Successful
-fetch_save_url('https://github.com/requests/requests', 'request.html')
+    # Test cases
 
-# Non URL
-fetch_save_url('lll', 'request.html')
+    # Successful
+    fetch_save_url('https://github.com/requests/requests', 'request.html')
 
-# Wrong URL
-fetch_save_url('https://github.co/requests/requests', 'request.html')
+    # Non URL
+    fetch_save_url('lll', 'request.html')
 
-# Non existing page
-fetch_save_url('https://github.com/aj3,o', 'request.html')
+    # Wrong URL
+    fetch_save_url('https://github.co/requests/requests', 'request.html')
+
+    # Non existing page
+    fetch_save_url('https://github.com/aj3,o', 'request.html')
+

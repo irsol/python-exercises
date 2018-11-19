@@ -1,0 +1,3 @@
+https://stackoverflow.com/questions/31804799/how-to-get-pdf-filename-with-python-requests
+https://github.com/requests/requests
+https://docs.python.org/3/howto/regex.html
