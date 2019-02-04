@@ -104,14 +104,14 @@ else:
 
 def convert_to_celsius(t, source):
     if source == "F":
-        return (t - 32 * 5.0/9.0).__round__(2)
+        return round(t - 32 * 5.0/9.0, 2)
     elif source == "K":
-        return (t - 273.15).__round__(2)
+        return round(t - 273.15, 2)
     elif source == 'C':
         return t
 
 
-convert_to_celsius(32, "K")
+print(convert_to_celsius(32, "K"))
 
 
 def convert_from_celsius(t, target):
@@ -123,7 +123,7 @@ def convert_from_celsius(t, target):
         return t
 
 
-convert_from_celsius(32, "F")
+print(convert_from_celsius(32, "F"))
 
 
 def convert_temperatures(t, source, target):
