@@ -15,6 +15,8 @@ def heart_risk(age, bmi):
     elif not young and not slim:
         risk = 'high'
     return risk
+
+
 heart_risk(45, 15)
 heart_risk(42, 20)
 heart_risk(18, 23)
@@ -29,4 +31,6 @@ def calculate_heart_risk(age, bmi):
     heavy = bmi >= 22.0
     risk = table[young][heavy]
     return risk
+
+
 calculate_heart_risk(23, 32)
