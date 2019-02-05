@@ -13,11 +13,11 @@ def print_welcome(name):
     #print Welcome
     print('Welcome', name)
 
-#calling function def hello()
+# calling function def hello()
 hello()
 hello()
 
-#pass the value to the name argument
+# pass the value to the name argument
 print_welcome('Fred')
 
 w = 4
@@ -26,8 +26,8 @@ h = 5
 print('width =', w, 'height =', h, 'area =', area(w, h))
 #
 #
-#Variables in function
-#global variable
+# Variables in function
+# global variable
 a = 4
 
 
