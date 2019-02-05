@@ -1,11 +1,11 @@
 # Function takes a string as an input from user, asks to enter a character and returns
 # an index of the character in the string
 
-user_string = input ("Enter any string: \n").lower()
+user_string = input("Enter any string: \n").lower()
 char = input("Enter a character to find: ").lower()
 
 # One line solution
-#index = user_string.index(char)
+# index = user_string.index(char)
 
 index = 0
 
