@@ -1,3 +1,18 @@
+# Practical Programming, Chapter7: Repetition
+
+# 1.
+
+def double_precending(values):
+    if values == []:
+        pass
+    else:
+        temp = values[0]
+        values[0] = 0
+        for i in range(1, len(values)):
+            values[i] = 2 * temp
+            temp = values[i]
+
+
 # Double all values in a list using built-in range function.
 
 values = [1, 2, 3]
