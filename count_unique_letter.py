@@ -16,6 +16,7 @@ def check_duplicates(text):
 
     return len(set(text)) != len(text)
 
+
 print(check_duplicates('llll p mmkj'))
 print(check_duplicates('l c n'))
 
@@ -42,6 +43,7 @@ def count_unique_letters(text):
             letters[letter] += 1
 
     return letters
+
 
 print(count_unique_letters('b d a'))
 print(count_unique_letters('b dd a cccc'))
