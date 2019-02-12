@@ -7,6 +7,7 @@ def square(t, length):
         t.fd(length)
         t.lt(length)
 
+
 #square(bob, 90)
 #turtle.mainloop()
 
@@ -18,11 +19,13 @@ def polygon(t, length, n):
         t.lt(360/n)
 
 
+
 #def circle(t, r):
 #    c = length * n
 
 
 #circle(polygon, 10)
+
 
 polygon(bob, 90, 9)
 turtle.mainloop()
