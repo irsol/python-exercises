@@ -2,7 +2,7 @@
 
 # Triangle range
 rows = int(input("Enter the number or rows: \n"))
-n = 1
+n = 10
 
 print(f"Floyd's Triangle with {rows} rows! \n")
 for i in range(1, rows + 1):
