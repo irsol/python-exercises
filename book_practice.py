@@ -1,6 +1,4 @@
-
-
-#Creating a function
+# Creating a function
 def hello():
     print('Hello')
 
@@ -12,6 +10,7 @@ def area(width, height):
 def print_welcome(name):
     #print Welcome
     print('Welcome', name)
+
 
 # calling function def hello()
 hello()
@@ -35,6 +34,7 @@ def print_func():
     #local variable
     a = 17
     print('in print_func a =', a)
+
 
 print_func()
 print('a = ', a)
