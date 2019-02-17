@@ -1,6 +1,5 @@
-
-
 # 1
+
 def check_duplicates(text):
     """ Checks if text contains duplicates.
 
