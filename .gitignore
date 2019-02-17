@@ -1,1 +1,12 @@
 .DS_Store
+.idea/encodings.xml
+.idea/misc.xml
+.idea/modules.xml
+.idea/python-exercises.iml
+.idea/workspace.xml
+__pycache__/
+output.html
+output1.html
+output2.html
+output3.html
+request.html
