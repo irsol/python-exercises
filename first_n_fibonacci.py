@@ -1,4 +1,4 @@
-# Fibonacci series program using for loop displays sequence upto n term
+# Fibonacci series program using for loop displays sequence up to n term
 # n is provided by the user
 
 # Starts from 0
