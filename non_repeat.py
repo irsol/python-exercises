@@ -11,4 +11,5 @@ def count_non_repetitive(s):
 
     return letters_count
 
+
 print(count_non_repetitive('Ky lle fi'))

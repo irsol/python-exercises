@@ -12,5 +12,4 @@ def print_grid(rows, columns):
             print(v_line)
 
 
-
 print_grid(2, 4)

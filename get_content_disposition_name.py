@@ -4,14 +4,12 @@ import re
 
 
 def get_filename(content_disposition):
-    '''
-    Get file name from content-disposition
-    '''
 
+    # Get file name from content-disposition
     if not content_disposition:
         return None
-    fname = re.findall("filename=(.+)", content_disposition)
-    return fname[0]
+    f_name = re.findall("filename=(.+)", content_disposition)
+    return f_name[0]
 
 
 url = "https://github.com/irsol"
